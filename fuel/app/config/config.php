@@ -210,7 +210,7 @@ return array(
 		 * );
 		 */
 		'packages'  => array(
-			//'orm',
+			'email'
 		),
 
 		/**

@@ -14,7 +14,7 @@ return array(
 		/**
 		 * Mail driver (mail, smtp, sendmail)
 		 */
-		'driver'		=> 'mail',
+		'driver'		=> 'smtp',
 
 		/**
 		 * Whether to send as html, set to null for autodetection.
@@ -89,10 +89,10 @@ return array(
 		 * SMTP settings
 		 */
 		'smtp'	=> array(
-			'host'		=> '',
-			'port'		=> 25,
-			'username'	=> '',
-			'password'	=> '',
+			'host'		=> 'smtp.sendgrid.net',
+			'port'		=> 587,
+			'username'	=> 'your_sendgrid_username',
+			'password'	=> 'your_sendgrid_password',
 			'timeout'	=> 5,
 		),
 

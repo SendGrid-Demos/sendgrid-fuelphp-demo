@@ -20,6 +20,15 @@ class Controller_Welcome extends Controller
 	 */
 	public function action_index()
 	{
+		$email = Email::forge();
+
+		$email->from('john.doe@example.com', 'John');
+		$email->to('jane.doe@example.com', 'Jane');
+		$email->subject('Test Email using SendGrid');
+		$email->body('This email was delivered by your friends at SendGrid');
+
+		$email->send();
+
 		return Response::forge(View::forge('welcome/index'));
 	}
 
